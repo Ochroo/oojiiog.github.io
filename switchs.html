@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="sidebartur.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img class="logo"src="logo.png" alt="logo">
+                </span>
+                <div class="text header-text">
+                    <span class="name">MNDU Power</span>
+                    <span class="profession">Тавтай морил</span>
+                </div>    
+            </div>
+            <i class="bx bx-chevron-right toggle"></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+                <li class="search-box">
+                        <i class="bx bx-search icon"></i>
+                        <input type="search" placeholder="Хайх">
+                </li>
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="sidebartur.html">
+                            <i class='bx bx-home icon'></i>
+                            <span class="text nav-text">Гэр</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="sidebar.html">
+                            <i class='bx bx-devices icon'></i>
+                            <span class="text nav-text">Төхөөрөмжүүд</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-pie-chart-alt icon'></i>
+                            <span class="text nav-text">Analyzing</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-wallet icon'></i>
+                            <span class="text nav-text">Хэтэвч</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-bell icon'></i>
+                            <span class="text nav-text">Мэдэгдэл</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-cog icon'></i>
+                            <span class="text nav-text">Тохиргоо</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="side.html">
+                            <i class='bx bx-user icon'></i>
+                            <span class="text nav-text">Хэрэглэгч</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom-content">
+                <li class="mode">
+                    <div class="moon-sun">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Харанхуй горим</span>
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+                <li class="nav-link">
+                    <a href="#">
+                        <i class='bx bx-log-out icon'></i>
+                        <span class="text nav-text">Гарах</span>
+                    </a>
+                </li>
+            </div>
+        </div>
+    </nav>
+    <section class="home">
+        <div class="topnav">
+            <a href="sidebar with switchs.html">Хяналтын самбар</a>
+            <a href="sidebar with switchs.html">Tineline</a>
+            <a href="sidebar with switchs.html">Төхөөрөмжийн мэдээлэл</a>
+        </div>
+        <div class="container"> 
+            <label class="switch-ner">405 Тоот</label>
+            <div class="box">
+                <button class="on" id="on">ON</button>
+                <button class="off" id="off">OFF</button>
+            </div>
+            <div class="form-box" id="box">
+                <div class="password-group">
+                    <label class="user-label">Нууц үг</label>
+                    <input required="" type="password" name="text" autocomplete="off" class="input" placeholder="Нууц үг оруулна уу" id="pass">
+                    <span class="eye" onclick="show()">
+                        <i id="hide" class="fa-solid fa-eye"></i>
+                        <i id="show" class="fa-solid fa-eye-slash"></i>
+                    </span>
+                </div>
+            </div> 
+        </div>
+    </section>
+</body>
+<script src="script.js"></script>
+</html>
